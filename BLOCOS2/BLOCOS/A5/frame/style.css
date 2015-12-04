@@ -1,0 +1,139 @@
+body > div2 {
+		width: 350px;
+		margin: 50px auto;
+	}
+
+	.container2 {
+		width: 300px;
+		height: 300px;
+		margin: 60px auto;
+		-webkit-perspective: 1100px;
+		-webkit-perspective-origin: -50% -50%;
+		float: left;
+	}
+
+		.cube {
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform: translateZ(-150px);
+			left: 15%;
+			position: relative;
+			margin: 0;
+			width: 300px;
+			height: 300px;
+			-webkit-transition: 1s;
+		}
+
+			.cube div2 {
+				width: 298px;
+				height: 188px;
+				background: rgba(53, 160, 56, 0.8);
+				position: absolute;
+				border: 1px solid #fff;
+				text-align: center;
+				padding-top: 110px;
+				color: #1200FF;
+				font: 1em arial;
+			}
+
+				.front2 {
+					-webkit-transform: translateZ(150px);
+				}
+
+				.left2 {
+					-webkit-transform: rotateY(-90deg) translateZ(150px);
+				}
+
+				.right2 {
+					-webkit-transform: rotateY(90deg) translateZ(150px);
+				}
+
+				.top2 {
+					-webkit-transform: rotateX(90deg) translateZ(150px);
+				}
+
+				.bottom2 {
+					-webkit-transform: rotateX(-90deg) translateZ(150px);
+				}
+
+				.back {
+					-webkit-transform: rotateY(180deg) translateZ(150px);
+				}
+
+				label {
+					cursor: pointer;
+					border-radius: 10px;
+					padding: 10px;
+					background: green;
+					float: left;
+					text-align: center;
+					margin-right: 5px;
+				}
+
+				label:hover {
+					background: blue;
+				}
+
+				input {
+					position: absolute;
+					left: -9999px;
+				}
+
+				input:checked + label {
+					font-weight: bold;
+				}
+
+				input[value="front2"]:checked ~ .container2 .cube2 {
+					-webkit-transform: translateZ(-150px) rotateY(0);
+				}
+
+				input[value="left2"]:checked ~ .container2 .cube2 {
+					-webkit-transform: translateZ(-150px) rotateY(90deg);
+				}
+
+				input[value="right2"]:checked ~ .container2 .cube2 {
+					-webkit-transform: translateZ(-150px) rotateY(-90deg);
+				}
+
+				input[value="top2"]:checked ~ .container2 .cube2 {
+					-webkit-transform: translateZ(-150px) rotateX(-90deg);
+				}
+
+				input[value="bottom2"]:checked ~ .container2 .cube2 {
+					-webkit-transform: translateZ(-150px) rotateX(90deg);
+				}
+
+				input[value="back"]:checked ~ .container2 .cube2 {
+					-webkit-transform: translateZ(-150px) rotateY(180deg);
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
